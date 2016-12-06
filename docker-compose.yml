@@ -3,6 +3,7 @@ phpapache:
     TZ: "Europe/Vienna"
     DEVSYSTEM: "docker"
     #XDEBUG_CONFIG: "remote_host=192.168.99.1"
+    DOCKER_XDEBUG_REMOTE_HOST: "192.168.99.1"
   build: docker-compose/php-apache
   volumes:
     - "./:/var/www/html/"
